@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chipasho Services</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Chiphasho</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#laundry">Laundry</a></li>
+                <li><a href="#ppe">PPE Supply</a></li>
+                <li><a href="#branding">Branding</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="assets/hero-image.jpg" alt="Chipasho Services" />
+            </div>
+
+            <div class="hero-text">
+                <h1 class="hero-title">Welcome to Chiphasho</h1>
+                <!-- <p>Your one-stop shop for reliable Laundry, top-quality PPE, and creative Branding.</p> -->
+                <p>We bring cleanliness, safety, and design together for individuals and businesses alike. Let’s build
+                    your image — and your confidence — with Chipasho’s trusted services.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Chiphasho</h2>
+                <p>Chiphasho is a proudly local brand providing essential services to both individuals and
+                    organizations.
+                    We specialize in laundry, personal protective equipment, and custom branding.</p>
+                <p>With attention to quality, customer care, and creative presentation, Chiphasho stands out as a
+                    reliable, flexible, and professional service provider.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/image.jpg" alt="About Chipasho" />
+            </div>
+        </div>
+    </section>
+
+    <section id="laundry" class="section">
+        <div class="">
+            <h2>Laundry Services</h2>
+            <!-- <ul>
+                <li>Washing and Drying with Ironing</li>
+                <li>Curtains</li>
+                <li>Linen, Bedding, and Blankets</li>
+            </ul> -->
+            <div class="image-grid">
+                <div class="image-item hover-label">
+                    <img src="assets/ironing.jpg" alt="Washing and Ironing" />
+                    <div class="image-overlay">Washing & Ironing</div>
+                </div>
+                <div class="image-item hover-label">
+                    <img src="assets/curtains.jpg" alt="Curtains laundry" />
+                    <div class="image-overlay">Curtains laundry</div>
+                </div>
+                <div class="image-item hover-label">
+                    <img src="assets/linen.jpg" alt="Linen and Bedding" />
+                    <div class="image-overlay">Linen and Bedding</div>
+                </div>
+                <div class="image-item hover-label">
+                    <img src="assets/blankets.jpg" alt="Blankets laundry" />
+                    <div class="image-overlay">Blankets laundry</div>
+                </div>
+                <div class="more-images hidden">
+                    <div class="image-item hover-label">
+                    <img src="assets/blankets.jpg" alt="Washing and Ironing" />
+                    <div class="image-overlay">Washing & Ironing</div>
+                </div>
+                    <img src="assets/laundry6.jpg" alt="Laundry 6" />
+                    <img src="assets/laundry7.jpg" alt="Laundry 7" />
+                    <img src="assets/laundry8.jpg" alt="Laundry 8" />
+                </div>
+            </div>
+            <button class="show-more-btn" onclick="toggleImages(this)">Show More</button>
+        </div>
+    </section>
+
+    <section id="ppe" class="section">
+        <div class="card">
+            <h2>PPE Supply</h2>
+            <ul>
+                <li>Conti Suits</li>
+                <li>Hard Hats, Glasses, Gloves</li>
+                <li>Hearing Protection, Safety Boots</li>
+                <li>Face Masks</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="branding" class="section">
+        <div class="card">
+            <h2>Branding Services</h2>
+            <ul>
+                <li>Logo Designing</li>
+                <li>Signage Printing (Indoor/Outdoor)</li>
+                <li>Gazebos & Banners</li>
+                <li>Business Cards, Invitations, Programs</li>
+                <li>Garment Printing, Mugs & Plates</li>
+                <li>Caps and Wallets</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Chiphasho. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

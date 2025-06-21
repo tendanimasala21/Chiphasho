@@ -20,10 +20,11 @@ body {
 
 header {
   background: var(--main);
-  padding: 1em 2em;
+  padding: 0.5em 2em; /* reduced vertical padding */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 80px; /* ensures it accommodates the logo */
   color: var(--white);
   position: sticky;
   top: 0;
@@ -37,20 +38,30 @@ header.transparent {
 }
 
 .logo {
-  font-weight: 600;
-  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 75px; /* Adjust as needed */
+  width: auto;
+  object-fit: contain;
 }
 
 nav ul {
   display: flex;
   list-style: none;
   gap: 1.5rem;
+  align-items: center;
+  height: 100%;
 }
 
 nav a {
   color: var(--white);
   text-decoration: none;
   font-weight: 500;
+  padding: 0.5em 0;
+  display: inline-block;
   transition: color 0.3s;
 }
 
@@ -60,8 +71,9 @@ nav a:hover {
 
 .menu-toggle {
   display: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   cursor: pointer;
+  align-self: center;
 }
 
 .hero {
@@ -163,7 +175,7 @@ nav a:hover {
 .about-image img {
   width: 100%;
   border-radius: 1rem;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  /* box-shadow: 0 10px 20px rgba(0,0,0,0.1); */
 }
 
 .about-text {
@@ -345,10 +357,12 @@ footer {
 
 .image-item img {
   width: 100%;
-  border-radius: 0.5rem;
+  height: 250px; /* or 220px depending on your design */
+  object-fit: cover;
+  border-radius: 0.75rem;
   transition: transform 0.3s ease;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .image-item img:hover {
@@ -362,13 +376,26 @@ footer {
   font-weight: 500;
 }
 
+.hidden {
+  display: none;
+}
+
 .more-images {
   display: none;
   grid-column: span 4;
+  transition: all 0.4s ease;
 }
 
 .more-images.visible {
   display: grid;
+  animation: fadeIn 0.5s ease;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .show-more-btn {

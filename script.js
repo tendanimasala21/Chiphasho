@@ -3,10 +3,19 @@ function toggleMenu() {
 }
 
 function toggleImages(button) {
-  const moreImages = button.previousElementSibling;
-  moreImages.classList.toggle('visible');
-  button.textContent = moreImages.classList.contains('visible') ? 'Show Less' : 'Show More';
+  const moreImages = button.previousElementSibling.querySelector('.more-images');
+
+  if (moreImages.classList.contains('visible')) {
+    moreImages.classList.remove('visible');
+    moreImages.classList.add('hidden');
+    button.textContent = "Show More";
+  } else {
+    moreImages.classList.remove('hidden');
+    moreImages.classList.add('visible');
+    button.textContent = "Show Less";
+  }
 }
+
 
 window.addEventListener('scroll', () => {
   const header = document.querySelector('header');

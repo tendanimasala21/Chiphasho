@@ -12,12 +12,16 @@
 <body>
 
     <header>
-        <div class="logo">Chiphasho</div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Chipasho Logo" />
+            </a>
+        </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="#laundry">Laundry</a></li>
+                <!-- <li><a href="#laundry">Laundry</a></li>
                 <li><a href="#ppe">PPE Supply</a></li>
-                <li><a href="#branding">Branding</a></li>
+                <li><a href="#branding">Branding</a></li> -->
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -50,13 +54,13 @@
                     reliable, flexible, and professional service provider.</p>
             </div>
             <div class="about-image">
-                <img src="assets/image.jpg" alt="About Chipasho" />
+                <img src="assets/logo.png" alt="About Chipasho" />
             </div>
         </div>
     </section>
 
     <section id="laundry" class="section">
-        <div class="">
+        <div class="card">
             <h2>Laundry Services</h2>
             <!-- <ul>
                 <li>Washing and Drying with Ironing</li>
@@ -81,13 +85,13 @@
                     <div class="image-overlay">Blankets laundry</div>
                 </div>
                 <div class="more-images hidden">
-                    <div class="image-item hover-label">
-                    <img src="assets/blankets.jpg" alt="Washing and Ironing" />
-                    <div class="image-overlay">Washing & Ironing</div>
-                </div>
+                    <!-- <div class="image-item hover-label">
+                        <img src="assets/blankets.jpg" alt="Washing and Ironing" />
+                        <div class="image-overlay">Washing & Ironing</div>
+                    </div>
                     <img src="assets/laundry6.jpg" alt="Laundry 6" />
                     <img src="assets/laundry7.jpg" alt="Laundry 7" />
-                    <img src="assets/laundry8.jpg" alt="Laundry 8" />
+                    <img src="assets/laundry8.jpg" alt="Laundry 8" /> -->
                 </div>
             </div>
             <button class="show-more-btn" onclick="toggleImages(this)">Show More</button>
@@ -96,13 +100,50 @@
 
     <section id="ppe" class="section">
         <div class="card">
-            <h2>PPE Supply</h2>
-            <ul>
+            <h2>Personal Protective Equipment Supply</h2>
+            <div class="image-grid">
+                <div class="image-item hover-label">
+                    <img src="assets/conti.jpg" alt="Conti Suits">
+                    <div class="image-overlay">Conti Suits</div>
+                </div>
+                <div class="image-item hover-label">
+                    <img src="assets/overalls.jpg" alt="Overalls">
+                    <div class="image-overlay">Overalls</div>
+                </div>
+                <div class="image-item hover-label">
+                    <img src="assets/aprons.jpeg" alt="Aprons">
+                    <div class="image-overlay">Aprons</div>
+                </div>
+                <div class="image-item hover-label">
+                    <img src="assets/reflective.webp" alt="Reflective wear">
+                    <div class="image-overlay">Reflective wear</div>
+                </div>
+                <div class="more-images hidden">
+                    <div class="image-item hover-label">
+                        <img src="assets/boots.webp" alt="Boots">
+                        <div class="image-overlay"> Work boots</div>
+                    </div>
+                    <div class="image-item hover-label">
+                        <img src="assets/masks.jpg" alt="Masks">
+                        <div class="image-overlay">Protective masks</div>
+                    </div>
+                    <div class="hover-label">
+                        <img src="" alt="">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="hover-label">
+                        <img src="" alt="">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="show-more-btn" onclick="toggleImages(this)">Show More</button>
+            <!-- <ul>
                 <li>Conti Suits</li>
                 <li>Hard Hats, Glasses, Gloves</li>
                 <li>Hearing Protection, Safety Boots</li>
                 <li>Face Masks</li>
-            </ul>
+            </ul> -->
         </div>
     </section>
 

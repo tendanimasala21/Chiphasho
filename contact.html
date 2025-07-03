@@ -19,9 +19,6 @@
     </div>
     <nav>
       <ul class="nav-links">
-        <!-- <li><a href="index.html#laundry">Laundry</a></li>
-        <li><a href="index.html#ppe">PPE Supply</a></li>
-        <li><a href="index.html#branding">Branding</a></li> -->
         <li><a href="contact.html" class="active-link">Contact</a></li>
       </ul>
       <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -39,17 +36,39 @@
 
   <section class="section contact-section">
     <div class="contact-container">
-      <form class="contact-form">
+      <div class="contact-form">
+        <div class="contact-info">
+          <div class="contact-line fade-in">
+            <img src="assets/whatsapp.svg" alt="WhatsApp" class="icon" />
+            <a href="https://wa.me/27774630152" target="_blank">077 463 0152</a>
+          </div>
+          <div class="contact-line fade-in">
+            <img src="assets/phone.svg" alt="Phone" class="icon" />
+            <a href="tel:+27797210266">079 721 0266</a>
+          </div>
+          <div class="contact-line fade-in">
+            <img src="assets/email.svg" alt="Email" class="icon" />
+            <a href="mailto:admin@chiphasho.co.za">admin@chiphasho.co.za</a>
+          </div>
+        </div>
+
+
+        <hr style="margin: 1.5em 0; border: none; border-top: 1px solid #ddd;" />
+
         <h2>Send a Message</h2>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
 
       <div class="contact-map">
-        <iframe src="https://maps.google.com/maps?q=Johannesburg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-          allowfullscreen></iframe>
+        <iframe
+          src="https://maps.google.com/maps?q=380%20Bank%20Patricia%20Street%2C%20Shop%20B10A%2C%20Olifantsfontein%2C%201666&t=&z=17&ie=UTF8&iwloc=&output=embed"
+          frameborder="0" allowfullscreen>
+        </iframe>
       </div>
     </div>
   </section>

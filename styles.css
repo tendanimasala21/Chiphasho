@@ -355,6 +355,66 @@ footer {
   }
 }
 
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.05rem;
+  color: var(--main);
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.contact-line a {
+  color: var(--main);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.contact-line a:hover {
+  color: var(--accent1);
+}
+
+.contact-line:hover {
+  transform: translateX(5px);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Fade-in animation on load */
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.fade-in:nth-child(1) { animation-delay: 0.1s; }
+.fade-in:nth-child(2) { animation-delay: 0.25s; }
+.fade-in:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 .image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
